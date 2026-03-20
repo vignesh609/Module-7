@@ -1,30 +1,36 @@
-# 📐 Taylor Series:sinh(x) Evaluation using Recursion in Python
+# 🔁 Types of Recursion: Head Recursion in Python
 
 ## 🎯 AIM:
-To write a Python program to evaluate the value of **sinh(x)** for **n terms** using recursion.
-
----
+To write a Python program to demonstrate **Head Recursion** by finding and printing the sequence based on the sum of all digits (even or odd adjusted input).
 
 ## 🧠 ALGORITHM:
 
 1. **Start**
-2. Read input for variable `x` (angle or number)
-3. Read input for variable `n` (number of terms)
-4. Define a function `fact(n)`:
-   - If `n <= 1`, return 1
-   - Else, return `n * fact(n - 1)` (recursive factorial)
-5. Define a function `sinh(x, n)`:
-   - If `n == 0`, return `x`
-   - Else, return `(pow(x, 2*n + 1) / fact(2*n + 1)) + sinh(x, n - 1)`
-6. Call the `sinh(x, n)` function and print the result
+2. Define a recursive function `fun(n)`
+3. In the function:
+   - Create a recursive call at the **beginning** (Head Recursion)
+   - Print the result after the recursive call
+4. Take input from the user
+5. If input is odd, convert it to the next even number
+6. Call the recursive function
 7. **Stop**
 
----
-
 ## 💻 PROGRAM:
-
-ADD CODE HERE
+```
+def fun(n):
+if (n >0):
+fun(n - 2)
+print(n-1,
+end=" ) x = 
+int(input()) 
+if(x%2==0):
+fun(x )
+ else:
+fun(x+1)
+```
 
 ## OUTPUT
+<img width="524" height="191" alt="image" src="https://github.com/user-attachments/assets/f9122aaf-9e17-4c84-9e74-488eafe7576b" />
 
 ## RESULT
+Thus, the given program is implemented and executed successfully.
